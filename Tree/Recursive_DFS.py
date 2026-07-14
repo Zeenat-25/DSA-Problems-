@@ -1,3 +1,12 @@
+graph = {
+    'A': ['B', 'C'],
+    'B': ['D', 'E'],
+    'C': ['F'],
+    'D': [],
+    'E': ['F'],
+    'F': []
+}
+
 def dfs(graph, node, goal, visited, path):
 
     visited.append(node)
