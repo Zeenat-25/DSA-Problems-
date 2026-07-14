@@ -1,3 +1,26 @@
+graph = {
+    'Oradea': ['Zerind', 'Sibiu'],
+    'Arad': ['Sibiu', 'Timisoara', 'Zerind'],
+    'Zerind': ['Arad', 'Oradea'],
+    'Timisoara': ['Lugoj', 'Arad'],
+    'Lugoj': ['Mechadia', 'Timisoara'],
+    'Mechadia': ['Lugoj', 'Drobeta'],
+    'Drobeta': ['Mechadia', 'Craiova'],
+    'Craiova': ['Drobeta', 'Rimnicu Vilcea', 'Pitesti'],
+    'Pitesti': ['Craiova', 'Rimnicu Vilcea', 'Bucharest'],
+    'Rimnicu Vilcea': ['Pitesti', 'Craiova', 'Sibiu'],
+    'Sibiu': ['Arad', 'Oradea', 'Rimnicu Vilcea', 'Fagaras'],
+    'Fagaras': ['Sibiu', 'Bucharest'],
+    'Bucharest': ['Fagaras', 'Pitesti', 'Giurgiu', 'Urziceni'],
+    'Giurgiu': ['Bucharest'],
+    'Urziceni': ['Bucharest', 'Hirsova', 'Vaslui'],
+    'Hirsova': ['Urziceni', 'Eforie'],
+    'Eforie': ['Hirsova'],
+    'Vaslui': ['Urziceni', 'Iasi'],
+    'Iasi': ['Vaslui', 'Neamt'],
+    'Neamt': ['Iasi']
+}
+
 def dfs(graph, node, goal, visited, path):
 
     visited.append(node)
